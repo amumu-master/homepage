@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>박정호 홈페이지</title>
+
+  <!-- 폰트 -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- 여기부터 디자인 적용 CSS -->
+  <style>
+    /* 기본 스타일 */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Roboto", sans-serif;
+      line-height: 1.7;
+      background: #f5f6fa;
+      color: #333;
+    }
+
+    /* header */
+    header {
+      background: linear-gradient(135deg, #74b9ff, #0984e3);
+      color: white;
+      padding: 40px 0;
+      margin-bottom: 40px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-bottom: 25px;
+    }
+
+    nav a {
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+      color: white;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      opacity: 0.7;
+    }
+
+    .hero {
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      font-weight: 700;
+    }
+
+    /* section 공통 */
+    main {
+      width: 90%;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section {
+      background: white;
+      padding: 30px;
+      border-radius: 14px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+      margin-bottom: 35px;
+    }
+
+    section h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #74b9ff;
+    }
+
+    /* bucketlist */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .skill {
+      background: #ecf0f1;
+      padding: 18px;
+      border-radius: 12px;
+      transition: 0.25s;
+    }
+
+    .skill:hover {
+      transform: translateY(-4px);
+      background: #dfe6e9;
+    }
+
+    .skill h3 {
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    /* contact */
+    #contact a {
+      color: #0984e3;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    #contact a:hover {
+      text-decoration: underline;
+    }
+
+    /* footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 20px;
+      color: #777;
+      font-size: 14px;
+    }
+
+    /* 모바일 대응 */
+    @media (max-width: 600px) {
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#bucketlist">bucketlist</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <h1>안녕하세요.</h1>
+    </div>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>자기소개</h2>
+      <p>안녕하세요 저는 전북대학교 스마트팜학과에 다니고 있는 23살 박정호입니다.</p>
+      <p>저의 취미는 롤이고 주 포지션은 정글입니다.</p>
+      <p>MBTI : INTP</p>
+      <p>고향은 여수입니다.</p>
+    </section>
+
+    <section id="bucketlist">
+      <h2>버킷리스트</h2>
+
+      <div class="skills-grid">
+        <div class="skill">
+          <h3>1. 혼자 여행하기</h3>
+          <p>일주일 이상</p>
+          <p>해외 여행</p>
+        </div>
+
+        <div class="skill">
+          <h3>2. 투자로만 1억 벌어보기</h3>
+          <p>(무리한 투자는 금물, 꾸준하게)</p>
+        </div>
+
+        <div class="skill">
+          <h3>3. 롤 마스터 티어 달성하기</h3>
+        </div>
+
+        <div class="skill">
+          <h3>4. 인생 살면서 책 10000권 읽어보기</h3>
+          <p>읽은 책은 제목, 저자, 간단한 소감 작성</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>연락처</h2>
+      <p>전화번호: <a href="tel:01040413691">010-4041-3691</a></p>
+      <p>이메일: <a href="mailto:amomo1111@naver.com">amomo1111@naver.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 박정호</p>
+  </footer>
+
+</body>
+</html>
